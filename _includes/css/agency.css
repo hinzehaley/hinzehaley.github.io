@@ -6,8 +6,8 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #{{ site.color.secondary-dark }};
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;;
+    color: #{{ site.color.purplecolor }};
 }
 
 .text-muted {
@@ -43,7 +43,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #{{ site.color.secondary }};
+    color: #{{ site.color.primary }};
 }
 
 h1,
@@ -53,8 +53,13 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight: 700;
+}
+
+section h5.hobbies {
+    color: #43384A;
+    text-align: center;
 }
 
 .img-centered {
@@ -172,11 +177,11 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #{{ site.color.primary-dark }};
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     color: #{{ site.color.primary }};
 }
 
@@ -184,7 +189,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #{{ site.color.secondary }};
+    color: #{{ site.color.primary }};
 }
 
 .navbar-default .navbar-collapse {
@@ -228,7 +233,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #{{ site.color.secondary }};
+    background-color: #{{ site.color.primary }};
 }
 
 @media(min-width:768px) {
@@ -254,7 +259,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #394A38;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -264,7 +269,7 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     background-attachment: scroll;
     background-image: url(img/header-bg.jpg);
     background-position: center center;
@@ -282,7 +287,7 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
@@ -291,8 +296,9 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 50px;
+    color: #F1EBE4; 
     font-weight: 700;
     line-height: 50px;
 }
@@ -305,8 +311,9 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
         font-size: 40px;
+        color: #F1EBE4;  
         font-style: italic;
         line-height: 40px;
     }
@@ -314,7 +321,7 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
@@ -328,13 +335,22 @@ section {
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
+    color: #43384A;
     font-size: 40px;
+}
+
+section h3.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #43384A;
+    font-size: 20px;
 }
 
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #43384A;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -403,6 +419,7 @@ section h3.section-subheading {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
+    color: #43384A;
     text-align: center;
     background-color: #fff;
 }
@@ -410,12 +427,14 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
+    color: #43384A;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     font-size: 16px;
+    color: #394A38;
     font-style: italic;
 }
 
@@ -657,7 +676,8 @@ section h3.section-subheading {
 }
 
 aside.clients img {
-    margin: 50px auto;
+    margin: 0 auto;
+    border: 0px;
 }
 
 section#contact {
@@ -668,7 +688,7 @@ section#contact {
 }
 
 section#contact .section-heading {
-    color: #fff;
+    color: #F1EBE4;
 }
 
 section#contact .form-group {
@@ -695,28 +715,28 @@ section#contact .form-control:focus {
 
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     font-weight: 700;
     color: #bbb;
 }
@@ -733,7 +753,7 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     line-height: 40px;
 }
 
@@ -741,7 +761,7 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     line-height: 40px;
 }
 
@@ -790,22 +810,26 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
+    color: #43384A;
     font-size: 3em;
 }
 
 .portfolio-modal .modal-content p {
     margin-bottom: 30px;
+    color: #000000;
 }
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     font-size: 16px;
+    color: #43384A;
     font-style: italic;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
     margin-top: 0;
+    color: #43384A;
     margin-bottom: 30px;
 }
 
