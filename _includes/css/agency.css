@@ -285,8 +285,17 @@ header .intro-text {
     padding-bottom: 50px;
 }
 
+header .header-container {
+    background-color: rgba(0,0,0,0.4);
+}
+
+header .intro-text .intro-text-box {
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 22px;
     font-style: italic;
@@ -294,7 +303,7 @@ header .intro-text .intro-lead-in {
 }
 
 header .intro-text .intro-heading {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 50px;
@@ -303,14 +312,24 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+header .intro-text .intro-text-box .line {
+    background-color: #F1EBE4;
+    margin: auto;
+    width: 50%;
+    padding: 1px;
+}
+
+header .down-arrow {
+    margin: 20px;
+}
+
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 200px;
         padding-bottom: 200px;
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
         font-family: 'Raleway', Helvetica, Arial, sans-serif;
         font-size: 40px;
         color: #F1EBE4;  
@@ -319,7 +338,7 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 15px;
         text-transform: uppercase;
         font-family: 'Raleway', Helvetica, Arial, sans-serif;
         font-size: 75px;
