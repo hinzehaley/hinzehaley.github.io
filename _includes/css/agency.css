@@ -62,6 +62,19 @@ section h5.hobbies {
     text-align: center;
 }
 
+section h4.education {
+    color: #43384A;
+}
+
+section h3.education {
+    color: #394A38;
+    text-align: left;
+}
+
+.education-info{
+    padding-left: 15%;
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -379,6 +392,14 @@ section h3.section-subheading {
     section {
         padding: 150px 0;
     }
+}
+
+.horizontal-container {
+    display: inline;
+}
+
+.center-image {
+    margin: 0;
 }
 
 .service-heading {

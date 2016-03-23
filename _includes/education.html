@@ -1,0 +1,66 @@
+<!-- About Section -->
+    <section id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Education</h2>
+                </div>
+
+
+                <div class="horizontal-container">
+                    <div style="float:left;padding:20px;">
+                        <div style="float:left;width:20%">
+                            <a href="https://www.carleton.edu/">
+                                <img border="0" src="img/logos/carleton-logo.png" width="100%">
+                            </a>
+                        </div>
+                        <div style ="float:left;padding-left:10px">
+                            <h3 class = "education">
+                                Carleton College
+                            </h3>
+                            <h5 class="education" align = "left">Bachelor of Art in Computer Science</h5>
+                            <h5 class="text-muted" align = "left">Graduation date: June 11, 2016</h5>
+                            <h5 class="text-muted" align = "left">GPA: 3.53   |   In-major GPA: 3.738</h5>
+                        </div>
+                    </div>
+
+                    <div style="float:left;padding:20px;">
+                        <div class = "center-image" style="float:left;width:20%;">
+                            <a href="http://www.ait-budapest.com/">
+                                <img border="0" src="img/logos/ait-logo.png" width="100%">
+                            </a>
+                        </div>
+                        <div style ="float:left;padding-left:10px">
+                            <h3 class = "education">
+                                AIT
+                            </h3>
+                            <h5 class="education" align = "left">Study abroad program Fall 2015</h5>
+                            <h5 class="text-muted" align = "left">Located in Budapest, Hungary</h5>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>       
+
+            <div class="row">
+            {% for course in site.courses %}
+                <div class="col-md-2 col-sm-4 portfolio-item">
+                    <a href="#portfolioModal{{ course.modal-id }}" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/{{ course.thumbnail }}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>{{ course.title }}</h4>
+                        <p class="text-muted">{{ course.subtitle }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+
+        </div>
+    </section>
