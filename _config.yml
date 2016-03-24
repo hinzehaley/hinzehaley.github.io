@@ -4,7 +4,7 @@ baseurl:
 # Site settings
 title: Haley Hinze
 email: hinzehaley@gmail.com
-description: "Developer for the Android mobile platform"
+description: "Aspiring Android Developer"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -16,6 +16,7 @@ color:
 
 collections:
   - courses
+  - skills_programming
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:

@@ -18,6 +18,20 @@ body {
     color: #{{ site.color.primary }};
 }
 
+.ratings-table {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.line-right {
+    border-right: 2px solid #394A38;
+}
+
+td {
+    padding-left: 10px;
+}
+
 p {
     font-size: 14px;
     line-height: 1.75;
@@ -69,6 +83,12 @@ section h4.education {
 section h3.education {
     color: #394A38;
     text-align: left;
+}
+
+section h3.ratings {
+    color: #394A38;
+    text-align: left;
+    padding-left: 10px
 }
 
 .education-info{

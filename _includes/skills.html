@@ -1,0 +1,57 @@
+<!-- Skills Section -->
+    <section id="skills" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Skills</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <h3 class="education">Programming</h3>
+
+
+
+
+                <table class="ratings-table">
+                {% assign number = 0 %}
+
+                {% for skill in site.skills_programming %}
+                    {% if number == 0 %}
+                        <tr>
+                            <td><h4 class = "text-muted">{{ skill.skill }}</h4></td>
+                            <td class = "line-right"><h3 class = "ratings" 
+                                {% for num in (1..{{skill.rating}}) %}
+                                 <span>●</span>
+                                {% endfor %}
+                                {% for num in ({{skill.rating}}..4) %}
+                                    <span>○</span>
+                                {% endfor %}
+                             </h3>
+                            </td> 
+
+                        {% assign number = 1 %}
+
+                    {% else %}
+                            <td><h4 class = "text-muted">{{ skill.skill }}</h4></td>
+                            <td><h3 class = "ratings" 
+                                {% for num in (1..{{skill.rating}}) %}
+                                 <span>●</span>
+                                {% endfor %}
+                                {% for num in ({{skill.rating}}..4) %}
+                                    <span>○</span>
+                                {% endfor %}
+                             </h3>
+                            </td> 
+                          </tr>
+                        {% assign number = 0 %}
+                    {% endif %}
+
+
+                {% endfor %}
+                </table>
+
+            </div>
+
+        </div>
+    </section>
