@@ -19,13 +19,13 @@ body {
 }
 
 .ratings-table {
-    width: 80%;
+    width: 100%;
     padding: 20px;
     margin: 0 auto;
 }
 
-.line-right {
-    border-right: 2px solid #394A38;
+tr {
+    background-color: #eeeeee;
 }
 
 td {
@@ -87,8 +87,14 @@ section h3.education {
 
 section h3.ratings {
     color: #394A38;
-    text-align: left;
+    text-align: right;
     padding-left: 10px
+}
+
+section h3.skills {
+    color: #394A38;
+    text-align: left;
+    padding-left: 20px
 }
 
 .education-info{
