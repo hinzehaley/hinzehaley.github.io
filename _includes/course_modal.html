@@ -1,6 +1,6 @@
-<!-- Portfolio Modals -->
+<!-- Course Modals -->
  {% for course in site.courses %}
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ course.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="courseModal{{ course.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -14,12 +14,10 @@
                         <div class="modal-body">
                             <h2>{{ course.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ course.img }}" class="img-responsive img-centered" alt="{{ course.alt }}">
+                            <img src="img/classes/{{ course.img }}" class="img-responsive img-centered" alt="{{ course.alt }}">
+                            <h3 class= "section-heading">Course Description</h3>
                             <p>{{ course.description }}</p>
-                            <ul class="list-inline item-details">
-                                <li>Location: {{ course.location }}
-                                </li>
-                            </ul>
+                            <p>Course description from <a href="https://apps.carleton.edu/curricular/cs/courses/">Carleton's Website</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>

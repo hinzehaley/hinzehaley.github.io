@@ -15,11 +15,12 @@ layout: default
     {% endfor %}
   </ul>
 
-   <ul class="posts">
-    {% for post in site.carleton-courses %}
+  <h1>Courses</h1>
+
+  <ul class="posts">
+    {% for course in site.courses %}
       <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ course.url | prepend: site.baseurl }}">{{ course.title }}</a>
       </li>
     {% endfor %}
   </ul>

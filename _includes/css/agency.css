@@ -388,6 +388,12 @@ section h3.section-subheading {
     font-weight: 400;
 }
 
+section h4.course-title {
+    color: #43384A;
+    font-size: 13px;
+    text-align: center;
+}
+
 @media(min-width:768px) {
     section {
         padding: 150px 0;
