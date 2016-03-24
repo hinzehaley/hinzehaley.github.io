@@ -6,7 +6,7 @@
                     <h2 class="section-heading">Skills</h2>
                 </div>
             </div>
-            
+             <br>
             <div class="row">
                 <h3 class="skills">Programming</h3>
 
@@ -32,7 +32,66 @@
 
                 {% endfor %}
                 </table>
+            </div>
+            </div>
+             <br>
+            <div class="row">
+                <h3 class="skills">Languages</h3>
 
+
+                 <div class="horizontal-container">
+                    {% for skill in site.skills_languages %}
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                             <table class="ratings-table">
+                                <tr>
+                                    <td><h4 class = "text-muted">{{ skill.skill }}</h4></td>
+                                    <td><h3 class = "ratings" 
+                                    {% for num in (1..{{skill.rating}}) %}
+                                        <span>●</span>
+                                    {% endfor %}
+                                    {% for num in ({{skill.rating}}..4) %}
+                                        <span>○</span>
+                                    {% endfor %}
+                                     </h3>
+                                </td> 
+                                </tr>
+                                </table>
+                                </div>
+
+                {% endfor %}
+                </table>
+
+            </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <h3 class="skills">Tools</h3>
+
+
+                 <div class="horizontal-container">
+                    {% for skill in site.skills_tools %}
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                             <table class="ratings-table">
+                                <tr>
+                                    <td><h4 class = "text-muted">{{ skill.skill }}</h4></td>
+                                    <td><h3 class = "ratings" 
+                                    {% for num in (1..{{skill.rating}}) %}
+                                        <span>●</span>
+                                    {% endfor %}
+                                    {% for num in ({{skill.rating}}..4) %}
+                                        <span>○</span>
+                                    {% endfor %}
+                                     </h3>
+                                </td> 
+                                </tr>
+                                </table>
+                                </div>
+
+                {% endfor %}
+                </table>
+
+            </div>
             </div>
 
         </div>
