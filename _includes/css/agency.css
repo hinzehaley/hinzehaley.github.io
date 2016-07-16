@@ -109,6 +109,16 @@ section h3.skills {
     margin: 0 auto;
 }
 
+.img-responsive {
+    -webkit-transition: .2s all;
+}
+
+.img-responsive:hover {
+    -webkit-filter: brightness(50%);
+}
+
+
+
 .bg-light-gray {
     background-color: #f7f7f7;
 }
@@ -448,6 +458,7 @@ section h4.course-title {
 
 .horizontal-container {
     display: inline;
+    margin: 0 auto;
 }
 
 .center-image {
