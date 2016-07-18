@@ -1,4 +1,4 @@
 ---
 skill: XML
-rating: 5
+rating: 4
 ---

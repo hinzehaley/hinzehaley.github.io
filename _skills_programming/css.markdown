@@ -1,4 +1,4 @@
 ---
 skill: CSS
-rating: 4
+rating: 3
 ---

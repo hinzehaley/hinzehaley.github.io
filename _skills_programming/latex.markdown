@@ -1,4 +1,4 @@
 ---
 skill: Latex
-rating: 4
+rating: 3
 ---
