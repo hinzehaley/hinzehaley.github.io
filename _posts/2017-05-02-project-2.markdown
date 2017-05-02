@@ -1,0 +1,16 @@
+---
+title: The Very Munchy Caterpillar
+subtitle: Android Application
+layout: default
+modal-id: 7
+date: 2017-05-02
+img: caterpillarLogo.png
+thumbnail: caterpillarLogo-thumbnail.png
+alt: image-alt
+project-date: May 2017
+category: Android Development
+description: A simple game that utilizes Firebase for storage, database, analytics, and user authentication. Sensor date is used to control this LibGDX-based game by tilting the device. The application immerses the user in the life of a caterpillar who must eat leaves and avoid poisonous spiders and psychadelic flowers. Eating leaves earns butterflies that can be spent in the store to buy the caterpillar a variety of accessories. You can add and invite friends to view their highscores and to send them a push notification when you achieve a new high score.
+link: https://play.google.com/store/apps/details?id=com.hinzehaley.games.munchycaterpillar
+linktext: View in Play Store
+
+---

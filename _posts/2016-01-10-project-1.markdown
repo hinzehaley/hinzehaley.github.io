@@ -11,7 +11,7 @@ project-date: January 2016
 client: Carleton College
 category: Android Development
 description: Worked on a team to develop a mobile application for Carleton College to celebrate the sesquicentennial. My work was primarily on the Android Platform, although we also developed for IOS.
-link: https://play.google.com/store/apps/details?id=carleton150.edu.carleton.carleton150
+link: https://play.google.com/store/apps/details?id=carleton150.edu.carleton.reunion
 linktext: View in Play Store
 
 ---
